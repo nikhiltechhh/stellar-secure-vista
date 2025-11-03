@@ -31,7 +31,7 @@ const Header = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
-          ? 'bg-background/98 backdrop-blur-xl shadow-xl border-b border-border/50'
+          ? 'bg-white shadow-lg border-b border-border/30'
           : 'bg-primary/95 backdrop-blur-sm shadow-2xl'
       }`}
     >
@@ -71,10 +71,10 @@ const Header = () => {
               <a
                 key={item.label}
                 href={item.href}
-                className={`px-4 py-2 font-semibold transition-all duration-300 relative group rounded-lg ${
+                className={`px-4 py-2 font-semibold transition-all duration-300 relative group ${
                   isScrolled 
-                    ? 'text-foreground/80 hover:text-foreground hover:bg-muted/50' 
-                    : 'text-primary-foreground/90 hover:text-primary-foreground hover:bg-primary-foreground/10'
+                    ? 'text-gray-700 hover:text-gray-900' 
+                    : 'text-primary-foreground/90 hover:text-primary-foreground'
                 }`}
               >
                 {item.label}
@@ -96,8 +96,8 @@ const Header = () => {
             onClick={toggleMobileMenu}
             className={`lg:hidden p-2.5 rounded-lg transition-all duration-300 ${
               isScrolled
-                ? 'text-foreground hover:bg-muted'
-                : 'text-primary-foreground hover:bg-primary-foreground/10'
+                ? 'text-gray-700'
+                : 'text-primary-foreground'
             }`}
             aria-label="Toggle menu"
           >
@@ -106,13 +106,13 @@ const Header = () => {
             ) : (
               <div className="space-y-1.5 transition-all duration-300">
                 <span className={`block w-5 h-0.5 transition-all duration-300 ${
-                  isScrolled ? 'bg-foreground' : 'bg-primary-foreground'
+                  isScrolled ? 'bg-gray-700' : 'bg-primary-foreground'
                 }`}></span>
                 <span className={`block w-7 h-0.5 transition-all duration-300 ${
-                  isScrolled ? 'bg-foreground' : 'bg-primary-foreground'
+                  isScrolled ? 'bg-gray-700' : 'bg-primary-foreground'
                 }`}></span>
                 <span className={`block w-5 h-0.5 transition-all duration-300 ${
-                  isScrolled ? 'bg-foreground' : 'bg-primary-foreground'
+                  isScrolled ? 'bg-gray-700' : 'bg-primary-foreground'
                 }`}></span>
               </div>
             )}
@@ -131,10 +131,10 @@ const Header = () => {
                 key={item.label}
                 href={item.href}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className={`block px-4 py-3.5 font-semibold rounded-lg transition-all duration-300 ${
+                className={`block px-4 py-3.5 font-semibold transition-all duration-300 relative group ${
                   isScrolled
-                    ? 'text-foreground/80 hover:text-foreground hover:bg-muted'
-                    : 'text-primary-foreground/90 hover:text-primary-foreground hover:bg-primary-foreground/10'
+                    ? 'text-gray-700 hover:text-gray-900'
+                    : 'text-primary-foreground/90 hover:text-primary-foreground'
                 }`}
                 style={{
                   animationDelay: `${index * 50}ms`,
@@ -142,6 +142,9 @@ const Header = () => {
                 }}
               >
                 {item.label}
+                <span className={`absolute bottom-2 left-4 w-0 h-0.5 transition-all duration-300 group-hover:w-16 ${
+                  isScrolled ? 'bg-accent' : 'bg-primary-foreground'
+                }`}></span>
               </a>
             ))}
             <div className="px-4 pt-3">

@@ -5,40 +5,36 @@ const Clients = () => {
   const clients = [
     
     {
-      name: 'Wipro',
-      logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Wipro_Primary_Logo_Color_RGB.svg/320px-Wipro_Primary_Logo_Color_RGB.svg.png',
-      alt: 'Wipro Logo'
+      name: 'Sunrise Hospitals',
+      logo: 'https://sunrisehospitalskakinada.in/wp-content/uploads/2024/10/Asset-3.png',
+      alt: 'Sunrise Hospitals Logo'
     },
    
     {
-      name: 'Infosys',
-      logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Infosys_logo.svg/320px-Infosys_logo.svg.png',
+      name: 'Bajrang Jwellers',
+      logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpFN6RsPwrCzoBShuxhmvqyOYZlqy2GkFG8w&s',
       alt: 'Infosys Logo'
     },
     
     
     {
-      name: 'Amazon',
-      logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/320px-Amazon_logo.svg.png',
+      name: 'Vijetha Hospitals',
+      logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbLHlZ38iYRTWK1q6TUU9cwBocw_sI3Ppi9g&s',
       alt: 'Amazon Logo'
     },
     {
-      name: 'Microsoft',
-      logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/320px-Microsoft_logo.svg.png',
+      name: 'Balaji Jwellerys',
+      logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQZzqVKgGLCT8DeyIlSIdz15XF1OvHNaYX7dWx4oDnoyiuJwGT8IsyeeKjZ7rTxoeYQAo&usqp=CAU',
       alt: 'Microsoft Logo'
     },
-    {
-      name: 'Google',
-      logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/320px-Google_2015_logo.svg.png',
-      alt: 'Google Logo'
-    }
+   
   ];
 
   // Duplicate clients for seamless infinite scroll
   const duplicatedClients = [...clients, ...clients];
 
   return (
-    <section className="w-full py-16 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+    <section id="clients" className="w-full py-16 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">

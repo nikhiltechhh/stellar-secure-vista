@@ -1,31 +1,38 @@
-import { ArrowLeft, Building2, Shield, Eye, Clock, Users, CheckCircle2, Phone } from "lucide-react";
+import { ArrowLeft, Users, Target, TrendingUp, Award, CheckCircle2, Phone, Briefcase, Shield, Clock, UserCheck } from "lucide-react";
 
-const CorporateIndustrialSecurity = () => {
+const OutsourcingManpower = () => {
   const features = [
-    { icon: Shield, title: "24/7 Surveillance", desc: "Round-the-clock monitoring with advanced CCTV systems" },
-    { icon: Users, title: "Trained Personnel", desc: "Highly qualified security guards with industry experience" },
-    { icon: Eye, title: "Access Control", desc: "Biometric and card-based entry management systems" },
-    { icon: Clock, title: "Emergency Response", desc: "Rapid response teams for any security incidents" }
+    { icon: Users, title: "Skilled Workforce", desc: "Qualified and trained professionals for every role" },
+    { icon: Shield, title: "Compliance Management", desc: "Full legal and regulatory compliance handling" },
+    { icon: TrendingUp, title: "Scalable Solutions", desc: "Flexible staffing to match your business needs" },
+    { icon: Award, title: "Quality Assurance", desc: "Rigorous screening and performance monitoring" }
   ];
 
   const benefits = [
-    "Professional and disciplined security staff",
-    "Customized security protocols for your business",
-    "Regular patrol and inspection services",
-    "Incident reporting and documentation",
-    "Employee and visitor management",
-    "CCTV installation and monitoring",
-    "Fire safety compliance support",
-    "Theft and vandalism prevention"
+    "Reduced recruitment and training costs",
+    "Access to pre-screened talent pool",
+    "Flexible workforce management",
+    "Complete payroll administration",
+    "Statutory compliance management",
+    "Performance monitoring and reporting",
+    "Quick deployment of resources",
+    "Focus on core business activities"
   ];
 
   const industries = [
-    "IT Parks & Tech Companies",
-    "Manufacturing Units",
-    "Warehouses & Logistics",
-    "Corporate Offices",
-    "Industrial Plants",
-    "Research Facilities"
+    "Manufacturing",
+    "Healthcare",
+    "Hospitality",
+    "Retail",
+    "IT & Technology",
+    "Logistics"
+  ];
+
+  const roles = [
+    { icon: UserCheck, title: "Skilled Labor", desc: "Technicians, operators, and specialized workers" },
+    { icon: Briefcase, title: "Support Staff", desc: "Administrative, clerical, and office support" },
+    { icon: Clock, title: "Temporary Staff", desc: "Short-term project and seasonal workforce" },
+    { icon: Target, title: "Permanent Hiring", desc: "Long-term recruitment and placement services" }
   ];
 
   return (
@@ -45,15 +52,15 @@ const CorporateIndustrialSecurity = () => {
           <div className="text-center space-y-6 px-4 max-w-4xl">
             <div className="inline-block px-6 py-2 bg-white/20 backdrop-blur-sm rounded-full border border-white/30 mb-4">
               <span className="text-white font-semibold flex items-center gap-2 justify-center">
-                <Building2 className="w-4 h-4" />
-                Professional Security
+                <Users className="w-4 h-4" />
+                Workforce Solutions
               </span>
             </div>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white drop-shadow-2xl">
-              Corporate & Industrial Security
+              Outsourcing Manpower
             </h1>
             <p className="text-xl md:text-2xl text-white/95 max-w-2xl mx-auto leading-relaxed drop-shadow-lg">
-              Protecting Your Business Assets with Elite Security Solutions
+              Strategic Workforce Solutions for Your Business Growth
             </p>
           </div>
         </div>
@@ -68,55 +75,51 @@ const CorporateIndustrialSecurity = () => {
       {/* Content Section */}
       <section className="py-20 px-4 md:px-8 lg:px-16">
         <div className="max-w-7xl mx-auto">
-          <button className="mb-12 px-4 py-2 border border-gray-300 rounded-lg hover:border-[#cf150e] hover:text-[#cf150e] transition-all duration-300 flex items-center gap-2 group bg-white">
-            <ArrowLeft className="h-4 w-4 group-hover:-translate-x-2 transition-transform duration-300" />
-            Back to Services
-          </button>
+          
 
           <div className="grid lg:grid-cols-2 gap-16 items-start mb-20">
             <div className="space-y-8">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#cf150e]/10 rounded-full border border-[#cf150e]/20">
-                <Building2 className="w-4 h-4 text-[#cf150e]" />
+                <Users className="w-4 h-4 text-[#cf150e]" />
                 <span className="text-sm font-semibold text-[#cf150e]">Service Overview</span>
               </div>
               
               <h2 className="text-5xl font-bold bg-gradient-to-r from-[#cf150e] to-[#8b0e08] bg-clip-text text-transparent">
-                Enterprise-Grade Security
+                Your Workforce Partner
               </h2>
               
               <div className="space-y-6 text-gray-600 text-lg leading-relaxed">
                 <p className="border-l-4 border-[#cf150e] pl-6 italic">
-                  In today's competitive business environment, protecting your corporate and industrial assets is paramount. Our specialized security services ensure your premises, personnel, and operations remain safe and secure.
+                  Building successful businesses requires the right people. Our manpower outsourcing services provide you with skilled, reliable workforce solutions that drive productivity and growth.
                 </p>
                 
                 <p>
-                  We provide comprehensive security solutions tailored to the unique needs of corporate offices and industrial facilities. Our trained security professionals understand the complexities of modern business operations and deliver services that integrate seamlessly with your workflow.
+                  We specialize in comprehensive workforce management, handling everything from recruitment and training to payroll administration and compliance. Our extensive talent pool and streamlined processes ensure you get the right people when you need them.
                 </p>
                 
                 <p className="bg-[#cf150e]/5 p-6 rounded-lg border-l-4 border-[#cf150e]">
-                  From access control and surveillance to emergency response and risk assessment, we offer end-to-end security management that gives you peace of mind to focus on your core business objectives.
+                  Whether you need temporary staff for seasonal demands, skilled labor for ongoing operations, or permanent hiring solutions, we deliver flexible, cost-effective manpower services tailored to your business requirements.
                 </p>
               </div>
             </div>
 
             <div className="lg:sticky lg:top-8">
               <div className="bg-white p-8 rounded-2xl shadow-2xl border border-gray-200">
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">Quick Contact</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">Hire Workforce</h3>
                 <div className="space-y-4">
-                 <div className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg">
-  <Phone className="w-6 h-6 text-[#cf150e]" />
-  <div>
-    <p className="text-sm text-gray-600">Call Us</p>
-    <p className="font-semibold text-gray-900">+91 8500199996</p>
-  </div>
-</div>
+                  <div className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg">
+                    <Phone className="w-6 h-6 text-[#cf150e]" />
+                    <div>
+                      <p className="text-sm text-gray-600">Call Us</p>
+                      <p className="font-semibold text-gray-900">+91 8500199996</p>
+                    </div>
+                  </div>
 
-<a href="tel:+918500199996" className="w-full block">
-  <button className="w-full bg-[#cf150e] hover:bg-[#a01109] text-white px-6 py-4 rounded-lg transition-all duration-300 font-semibold">
-    Request a Quote
-  </button>
-</a>
-
+                  <a href="tel:+918500199996" className="w-full block">
+                    <button className="w-full bg-[#cf150e] hover:bg-[#a01109] text-white px-6 py-4 rounded-lg transition-all duration-300 font-semibold">
+                      Request Staffing Quote
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -126,10 +129,10 @@ const CorporateIndustrialSecurity = () => {
           <div className="mb-20">
             <div className="text-center mb-12">
               <h3 className="text-4xl font-bold bg-gradient-to-r from-[#cf150e] to-[#8b0e08] bg-clip-text text-transparent mb-4">
-                Key Features
+                Why Choose Our Manpower Services
               </h3>
               <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-                Comprehensive security solutions designed for modern businesses
+                Comprehensive workforce solutions backed by expertise and reliability
               </p>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -145,6 +148,34 @@ const CorporateIndustrialSecurity = () => {
                     {feature.title}
                   </h4>
                   <p className="text-gray-600">{feature.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Staffing Solutions */}
+          <div className="mb-20">
+            <div className="text-center mb-12">
+              <h3 className="text-3xl font-bold text-gray-900 mb-4">
+                Staffing Solutions We Offer
+              </h3>
+              <p className="text-gray-600 text-lg">
+                Customized workforce solutions for every business need
+              </p>
+            </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {roles.map((role, index) => (
+                <div
+                  key={index}
+                  className="p-6 bg-white rounded-xl border border-gray-200 hover:border-[#cf150e]/50 shadow-lg hover:shadow-2xl transition-all duration-300 group"
+                >
+                  <div className="p-4 bg-gradient-to-br from-[#cf150e]/10 to-[#8b0e08]/10 rounded-xl w-fit mb-4 group-hover:from-[#cf150e]/20 group-hover:to-[#8b0e08]/20 transition-colors">
+                    <role.icon className="w-8 h-8 text-[#cf150e]" />
+                  </div>
+                  <h4 className="text-xl font-bold text-gray-900 mb-2">
+                    {role.title}
+                  </h4>
+                  <p className="text-gray-600">{role.desc}</p>
                 </div>
               ))}
             </div>
@@ -178,12 +209,10 @@ const CorporateIndustrialSecurity = () => {
               </div>
             </div>
           </div>
-
-        
         </div>
       </section>
     </div>
   );
 };
 
-export default CorporateIndustrialSecurity;
+export default OutsourcingManpower;

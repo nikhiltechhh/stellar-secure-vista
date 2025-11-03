@@ -23,36 +23,36 @@ const Footer = () => {
             <p className="text-sm text-[hsl(var(--footer-muted))] leading-relaxed">
               Providing comprehensive security solutions to protect what matters most. Your safety is our priority.
             </p>
-            <div className="flex space-x-3 pt-2">
+            {/* <div className="flex space-x-3 pt-2">
               <a 
                 href="#" 
-                className="w-9 h-9 rounded-lg bg-[hsl(var(--footer-border))] hover:bg-accent flex items-center justify-center transition-colors duration-300"
+                className="w-9 h-9 rounded-lg bg-[hsl(var(--footer-border))] hover:bg-[#cf150e] flex items-center justify-center transition-colors duration-300"
                 aria-label="Facebook"
               >
                 <Facebook className="w-4 h-4" />
               </a>
               <a 
                 href="#" 
-                className="w-9 h-9 rounded-lg bg-[hsl(var(--footer-border))] hover:bg-accent flex items-center justify-center transition-colors duration-300"
+                className="w-9 h-9 rounded-lg bg-[hsl(var(--footer-border))] hover:bg-[#cf150e] flex items-center justify-center transition-colors duration-300"
                 aria-label="Twitter"
               >
                 <Twitter className="w-4 h-4" />
               </a>
               <a 
                 href="#" 
-                className="w-9 h-9 rounded-lg bg-[hsl(var(--footer-border))] hover:bg-accent flex items-center justify-center transition-colors duration-300"
+                className="w-9 h-9 rounded-lg bg-[hsl(var(--footer-border))] hover:bg-[#cf150e] flex items-center justify-center transition-colors duration-300"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-4 h-4" />
               </a>
               <a 
                 href="#" 
-                className="w-9 h-9 rounded-lg bg-[hsl(var(--footer-border))] hover:bg-accent flex items-center justify-center transition-colors duration-300"
+                className="w-9 h-9 rounded-lg bg-[hsl(var(--footer-border))] hover:bg-[#cf150e] flex items-center justify-center transition-colors duration-300"
                 aria-label="Instagram"
               >
                 <Instagram className="w-4 h-4" />
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Services */}
@@ -60,17 +60,17 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4 text-[hsl(var(--footer-foreground))]">Services</h3>
             <ul className="space-y-3">
               {[
-                "Residential Security",
-                "Commercial Security",
-                "Surveillance Systems",
-                "Access Control",
-                "Security Consulting",
-                "Emergency Response"
+                "Corporate and Industrial Security",
+                "Residential & Commercial Security",
+                "Facility and Home Management",
+                "Valet Parking",
+                "Fire Safety Services",
+                "Outsourcing Man Power"
               ].map((service) => (
                 <li key={service}>
                   <a 
                     href="#" 
-                    className="text-sm text-[hsl(var(--footer-muted))] hover:text-accent transition-colors duration-200 inline-block"
+                    className="text-sm text-[hsl(var(--footer-muted))] hover:text-[#cf150e] transition-colors duration-200 inline-block"
                   >
                     {service}
                   </a>
@@ -84,11 +84,11 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4 text-[hsl(var(--footer-foreground))]">Quick Links</h3>
             <ul className="space-y-3">
               {[
-                "About Us",
-                "Careers",
-                "Blog",
-                "Case Studies",
-                "FAQ",
+                "Home",
+                "About",
+                "Services",
+                "Clients",
+                "Contact",
                 "Support"
               ].map((link) => (
                 <li key={link}>
@@ -108,26 +108,26 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4 text-[hsl(var(--footer-foreground))]">Contact Us</h3>
             <ul className="space-y-4">
               <li className="flex items-start space-x-3">
-                <MapPin className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
+                <MapPin className="w-5 h-5 text-[#cf150e] mt-0.5 flex-shrink-0" />
                 <span className="text-sm text-[hsl(var(--footer-muted))]">
                   Hyderabad<br />
                   India
                 </span>
               </li>
               <li className="flex items-center space-x-3">
-                <Phone className="w-5 h-5 text-accent flex-shrink-0" />
+                <Phone className="w-5 h-5 text-[#cf150e] flex-shrink-0" />
                 <a 
                   href="tel:+1234567890" 
-                  className="text-sm text-[hsl(var(--footer-muted))] hover:text-accent transition-colors duration-200"
+                  className="text-sm text-[hsl(var(--footer-muted))] hover:text-[#cf150e] transition-colors duration-200"
                 >
                   +91 8500199996
                 </a>
               </li>
               <li className="flex items-center space-x-3">
-                <Mail className="w-5 h-5 text-accent flex-shrink-0" />
+                <Mail className="w-5 h-5 text-[#cf150e] flex-shrink-0" />
                 <a 
                   href="mailto:info@secureguard.com" 
-                  className="text-sm text-[hsl(var(--footer-muted))] hover:text-accent transition-colors duration-200"
+                  className="text-sm text-[hsl(var(--footer-muted))] hover:text-[#cf150e] transition-colors duration-200"
                 >
                   srisamrakshaservices@hotmail.com
                 </a>
@@ -136,10 +136,10 @@ const Footer = () => {
             
             {/* Emergency Contact */}
             <div className="mt-6 p-4 bg-[hsl(var(--footer-border))] rounded-lg border border-accent/20">
-              <p className="text-xs font-semibold text-accent mb-1">24/7 Emergency</p>
+              <p className="text-xs font-semibold text-[#cf150e] mb-1">24/7 Emergency</p>
               <a 
                 href="tel:+1800911" 
-                className="text-lg font-bold text-[hsl(var(--footer-foreground))] hover:text-accent transition-colors duration-200"
+                className="text-lg font-bold text-[hsl(var(--footer-foreground))] hover:text-[#cf150e] transition-colors duration-200"
               >
                 +91 8500199996
               </a>
@@ -153,7 +153,7 @@ const Footer = () => {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-sm text-[hsl(var(--footer-muted))] text-center md:text-left">
-              © {currentYear} SecureGuard Security Services. All rights reserved.
+              © {currentYear} Srisamraksha Security Services. All rights reserved. Buildursite.ui
             </p>
             <div className="flex flex-wrap justify-center md:justify-end gap-6">
               <a 

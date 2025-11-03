@@ -43,12 +43,12 @@ const stats = [
 
 const Choose = () => {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background to-muted/30">
+    <section id="choose" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background to-muted/30">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
-            Why Choose <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Our Security Services</span>
+            Why Choose <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Us</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Industry-leading protection backed by cutting-edge technology and unwavering commitment to your safety

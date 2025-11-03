@@ -14,14 +14,9 @@ const FounderDetail = () => {
         <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl"></div>
         
         <div className="max-w-7xl mx-auto relative z-10">
-          <Link to="/">
-            <Button variant="outline" className="mb-8 group hover:border-primary/50 transition-all duration-300">
-              <ArrowLeft className="mr-2 w-4 h-4 group-hover:-translate-x-1 transition-transform" />
-              Back to Home
-            </Button>
-          </Link>
+          
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 my-20 items-center">
             {/* Left: Image */}
             <div className="relative animate-fade-in">
               <div className="absolute -inset-6 bg-gradient-to-br from-primary/20 to-primary/10 rounded-3xl blur-2xl"></div>
@@ -103,7 +98,7 @@ const FounderDetail = () => {
             {/* Main Story */}
             <div className="space-y-8">
               {/* Journey Section */}
-              <div className="group relative animate-fade-in">
+              <div className="group relative animate-fade-in -mt-24">
                 <div className="absolute -inset-1 bg-gradient-to-r from-primary/10 to-primary/5 rounded-2xl blur-lg group-hover:blur-xl transition-all"></div>
                 <div className="relative bg-card border border-border rounded-2xl p-10 shadow-lg hover:shadow-xl transition-all duration-300">
                   <div className="flex items-center gap-3 mb-6">
@@ -230,7 +225,7 @@ const FounderDetail = () => {
               </div>
 
               {/* Key Achievements */}
-              <div className="relative group animate-fade-in" style={{ animationDelay: '0.5s' }}>
+              <div className="relative group animate-fade-in " style={{ animationDelay: '0.5s' }}>
                 <div className="absolute -inset-1 bg-gradient-to-r from-primary/10 to-primary/5 rounded-2xl blur-lg group-hover:blur-xl transition-all"></div>
                 <div className="relative bg-card border border-border rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all">
                   <h3 className="font-bold text-foreground text-xl mb-6 flex items-center gap-2">
@@ -276,7 +271,7 @@ const FounderDetail = () => {
         </div>
       </section>
 
-      <Footer />
+  
     </div>
   );
 };

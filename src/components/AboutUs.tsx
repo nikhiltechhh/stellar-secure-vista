@@ -11,7 +11,7 @@ const AboutUs = () => {
   ];
 
   return (
-    <section className="relative py-20 px-4 md:px-8 lg:px-16 bg-gradient-to-br from-background via-secondary/20 to-background overflow-hidden -mt-36">
+    <section id="about" className="relative py-20 px-4 md:px-8 lg:px-16 bg-gradient-to-br from-background via-secondary/20 to-background overflow-hidden -mt-36">
       {/* Decorative Elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -z-10" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl -z-10" />
@@ -67,16 +67,17 @@ const AboutUs = () => {
                   <CheckCircle2 className="ml-2 w-5 h-5 group-hover:scale-110 transition-transform" />
                 </Button>
               </Link>
-              <Link to="/about">
-                <Button 
-                  variant="outline" 
-                  size="lg"
-               className="border-2 border-[#cf150e] text-[#cf150e] hover:bg-[#cf150e] hover:text-white font-semibold px-8 py-6 text-base transition-all duration-300 hover-lift"
+             <Button
+  variant="outline"
+  size="lg"
+  className="border-2 border-[#cf150e] text-[#cf150e] hover:bg-[#cf150e] hover:text-white font-semibold px-8 py-6 text-base transition-all duration-300 hover-lift"
+  onClick={() => {
+    document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
+  }}
+>
+  Our Services
+</Button>
 
-                >
-                  Our Services
-                </Button>
-              </Link>
             </div>
           </div>
 

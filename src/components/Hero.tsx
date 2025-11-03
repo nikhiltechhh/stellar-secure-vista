@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Shield, Cctv, Building2, Users, Car, Flame, UserPlus } from 'lucide-react';
-import hero1 from '@/assets/hero-1.jpg';
-import hero2 from '@/assets/hero-2.jpg';
-import hero3 from '@/assets/hero-3.jpg';
+import hero1 from '@/assets/Security.jpg';
+import hero2 from '@/assets/cam.jpg';
+import hero3 from '@/assets/cam3.jpg';
 import CCTV from '@/assets/cctv.png';
 
 const Hero = () => {
@@ -121,11 +121,11 @@ const Hero = () => {
                   {slide.subtitle}
                 </p>
                 <div className="flex flex-wrap gap-4">
-                  <button className="group px-8 py-4 bg-gradient-to-r from-[#cf150e] via-[#cf150e] to-[#cf150e]/90 text-white font-bold rounded-lg shadow-2xl shadow-[#cf150e]/50 hover:shadow-[#cf150e]/70 hover:scale-105 transition-all duration-300 relative overflow-hidden"
+                  {/* <button className="group px-8 py-4 bg-gradient-to-r from-[#cf150e] via-[#cf150e] to-[#cf150e]/90 text-white font-bold rounded-lg shadow-2xl shadow-[#cf150e]/50 hover:shadow-[#cf150e]/70 hover:scale-105 transition-all duration-300 relative overflow-hidden"
 >
                     <span className="relative z-10">Get Started</span>
                     <div className="absolute inset-0 bg-gradient-to-r from-accent/0 via-white/30 to-accent/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
-                  </button>
+                  </button> */}
                   {/* <button className="px-8 py-4 bg-background/10 backdrop-blur-md text-primary-foreground font-bold rounded-lg border-2 border-primary-foreground/40 hover:bg-background/20 hover:border-primary-foreground/60 hover:scale-105 transition-all duration-300 shadow-xl">
                     Learn More
                   </button> */}

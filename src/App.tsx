@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import ScrollToTop from "@/components/ScrollToTop";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import FounderDetails from "./pages/Founderdetails";
@@ -26,31 +27,18 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
-          {/* Homepage without header/footer */}
           <Route path="/" element={<Index />} />
-
-          {/* Pages with header at top and footer at bottom */}
-          <Route
-            path="*"
-            element={
-              <>
-                <Header />
-                <Routes>
-                  <Route path="/about" element={<About />} />
-                  <Route path="/founderdetails" element={<FounderDetails />} />
-                  <Route path="/service1" element={<Service1 />} />
-                  <Route path="/service2" element={<Service2 />} />
-                  <Route path="/service3" element={<Service3 />} />
-                  <Route path="/service4" element={<Service4 />} />
-                  <Route path="/service5" element={<Service5 />} />
-                  <Route path="/service6" element={<Service6 />} />
-                  <Route path="*" element={<NotFound />} />
-                </Routes>
-                <Footer />
-              </>
-            }
-          />
+          <Route path="/about" element={<><Header /><About /><Footer /></>} />
+          <Route path="/founderdetails" element={<><Header /><FounderDetails /><Footer /></>} />
+          <Route path="/service1" element={<><Header /><Service1 /><Footer /></>} />
+          <Route path="/service2" element={<><Header /><Service2 /><Footer /></>} />
+          <Route path="/service3" element={<><Header /><Service3 /><Footer /></>} />
+          <Route path="/service4" element={<><Header /><Service4 /><Footer /></>} />
+          <Route path="/service5" element={<><Header /><Service5 /><Footer /></>} />
+          <Route path="/service6" element={<><Header /><Service6 /><Footer /></>} />
+          <Route path="*" element={<><Header /><NotFound /><Footer /></>} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>

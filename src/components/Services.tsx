@@ -1,4 +1,4 @@
-import { Building2, Home, Wrench, Car, Flame, Users } from "lucide-react";
+import { Building2, Cctv, Wrench, Car, Flame, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
@@ -7,43 +7,43 @@ const services = [
     icon: Building2,
     title: "Corporate and Industrial Security",
     description: "Comprehensive security solutions for corporate offices, industrial facilities, and manufacturing units with trained personnel and advanced systems.",
-    link: "#corporate-security"
+    link: "Service1"
   },
   {
-    icon: Home,
+    icon: Cctv,
     title: "Residential & Commercial Security",
     description: "Round-the-clock protection for residential complexes, commercial buildings, and retail spaces ensuring safety and peace of mind.",
-    link: "#residential-security"
+    link: "Service3"
   },
   {
     icon: Wrench,
     title: "Facility & Housekeeping Management",
     description: "Professional facility management and housekeeping services maintaining cleanliness, hygiene, and operational efficiency.",
-    link: "#facility-management"
+    link: "Service4"
   },
   {
     icon: Car,
     title: "Valet Parking",
     description: "Premium valet parking services for hotels, restaurants, events, and commercial establishments with courteous and trained staff.",
-    link: "#valet-parking"
+    link: "Service5"
   },
   {
     icon: Flame,
     title: "Fire Safety",
     description: "Complete fire safety solutions including prevention systems, emergency response training, and compliance management.",
-    link: "#fire-safety"
+    link: "Service6"
   },
   {
     icon: Users,
     title: "Outsourcing Man Power",
     description: "Reliable manpower outsourcing services providing skilled and unskilled workforce tailored to your business requirements.",
-    link: "#manpower-outsourcing"
+    link: "Service2"
   }
 ];
 
 const Services = () => {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-background">
+    <section id="services" className="py-20 px-4 sm:px-6 lg:px-8 bg-background">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">

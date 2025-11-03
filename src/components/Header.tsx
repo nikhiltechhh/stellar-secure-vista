@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, Shield } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import LOGO from '@/assets/LOGO-Photoroom.png';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -38,32 +39,31 @@ const Header = () => {
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex-shrink-0 group cursor-pointer">
-            <div className="flex items-center gap-3">
-              <div className={`relative w-14 h-14 rounded-xl flex items-center justify-center transition-all duration-300 ${
-                isScrolled 
-                  ? 'bg-gradient-to-br from-primary to-primary/70 shadow-lg shadow-primary/30' 
-                  : 'bg-background/20 backdrop-blur-sm border-2 border-primary-foreground/30'
-              }`}>
-                <Shield className={`w-7 h-7 transition-colors duration-300 ${
-                  isScrolled ? 'text-primary-foreground' : 'text-primary-foreground'
-                }`} />
-                <div className="absolute inset-0 rounded-xl bg-accent/0 group-hover:bg-accent/10 transition-colors duration-300"></div>
-              </div>
-              <div className="hidden sm:block">
-                <h1 className={`text-xl font-bold tracking-tight transition-colors duration-300 ${
-                  isScrolled ? 'text-foreground' : 'text-primary-foreground'
-                }`}>
-                  SecureShield
-                </h1>
-                <p className={`text-xs font-medium transition-colors duration-300 ${
-                  isScrolled ? 'text-muted-foreground' : 'text-primary-foreground/80'
-                }`}>
-                  Professional Security
-                </p>
-              </div>
-            </div>
-          </div>
+          <div className="flex-shrink-0 group cursor-pointer flex items-center gap-3">
+  {/* Logo only */}
+  <img
+    src={LOGO} // <-- change to your actual logo path
+    alt="SecureShield Logo"
+    className="w-16 h-16 object-contain transition-transform duration-300 group-hover:scale-105"
+  />
+
+  <div className="hidden sm:block">
+    <h1
+      className={`text-xl font-bold tracking-tight transition-colors duration-300 ${
+        isScrolled ? 'text-foreground' : 'text-primary-foreground'
+      }`}
+    >
+      Srisamraksha
+    </h1>
+    <p
+      className={`text-xs font-medium transition-colors duration-300 ${
+        isScrolled ? 'text-muted-foreground' : 'text-primary-foreground/80'
+      }`}
+    >
+      Security Services Private Ltd
+    </p>
+  </div>
+</div>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-1">
@@ -84,7 +84,8 @@ const Header = () => {
               </a>
             ))}
             <div className="ml-4">
-              <Button className="relative overflow-hidden group bg-gradient-to-r from-accent to-accent/90 hover:from-accent/90 hover:to-accent text-accent-foreground font-bold px-6 py-2.5 shadow-lg shadow-accent/30 hover:shadow-xl hover:shadow-accent/40 transition-all duration-300 hover:scale-105 border-0">
+              <Button className="bg-gradient-to-r from-[#cf150e] to-[#e61710] hover:from-[#b5120b] hover:to-[#cf150e]"
+>
                 <span className="relative z-10">Get Free Quote</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-accent/0 via-white/20 to-accent/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
               </Button>
@@ -148,7 +149,8 @@ const Header = () => {
               </a>
             ))}
             <div className="px-4 pt-3">
-              <Button className="w-full bg-gradient-to-r from-accent to-accent/90 hover:from-accent/90 hover:to-accent text-accent-foreground font-bold py-3 shadow-lg shadow-accent/30">
+              <Button className="bg-gradient-to-r from-[#cf150e] to-[#e61710] hover:from-[#b5120b] hover:to-[#cf150e]"
+>
                 Get Free Quote
               </Button>
             </div>

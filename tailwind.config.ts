@@ -12,6 +12,14 @@ export default {
         "2xl": "1400px",
       },
     },
+    theme: {
+  extend: {
+    colors: {
+      accent: "#cf150e",
+    },
+  },
+}
+,
     extend: {
       colors: {
         border: "hsl(var(--border))",

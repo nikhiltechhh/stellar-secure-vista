@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight, Shield, Home, Building2, Users, Car, Flame, UserPlus } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Shield, Cctv, Building2, Users, Car, Flame, UserPlus } from 'lucide-react';
 import hero1 from '@/assets/hero-1.jpg';
 import hero2 from '@/assets/hero-2.jpg';
 import hero3 from '@/assets/hero-3.jpg';
+import CCTV from '@/assets/cctv.png';
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -33,7 +34,7 @@ const Hero = () => {
       color: 'from-primary to-primary/80',
     },
     {
-      icon: Home,
+      icon: Cctv,
       title: 'Residential & Commercial Security',
       color: 'from-secondary to-secondary/80',
     },
@@ -82,7 +83,7 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen">
       {/* Carousel */}
-      <div className="relative h-screen overflow-hidden">
+      <div className="relative h-[80vh] overflow-hidden">
         {slides.map((slide, index) => (
           <div
             key={index}
@@ -120,13 +121,14 @@ const Hero = () => {
                   {slide.subtitle}
                 </p>
                 <div className="flex flex-wrap gap-4">
-                  <button className="group px-8 py-4 bg-gradient-to-r from-accent via-accent to-accent/90 text-accent-foreground font-bold rounded-lg shadow-2xl shadow-accent/50 hover:shadow-accent/70 hover:scale-105 transition-all duration-300 relative overflow-hidden">
-                    <span className="relative z-10">Get Started Now</span>
+                  <button className="group px-8 py-4 bg-gradient-to-r from-[#cf150e] via-[#cf150e] to-[#cf150e]/90 text-white font-bold rounded-lg shadow-2xl shadow-[#cf150e]/50 hover:shadow-[#cf150e]/70 hover:scale-105 transition-all duration-300 relative overflow-hidden"
+>
+                    <span className="relative z-10">Get Started</span>
                     <div className="absolute inset-0 bg-gradient-to-r from-accent/0 via-white/30 to-accent/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
                   </button>
-                  <button className="px-8 py-4 bg-background/10 backdrop-blur-md text-primary-foreground font-bold rounded-lg border-2 border-primary-foreground/40 hover:bg-background/20 hover:border-primary-foreground/60 hover:scale-105 transition-all duration-300 shadow-xl">
+                  {/* <button className="px-8 py-4 bg-background/10 backdrop-blur-md text-primary-foreground font-bold rounded-lg border-2 border-primary-foreground/40 hover:bg-background/20 hover:border-primary-foreground/60 hover:scale-105 transition-all duration-300 shadow-xl">
                     Learn More
-                  </button>
+                  </button> */}
                 </div>
                 </div>
               </div>
@@ -135,23 +137,25 @@ const Hero = () => {
         ))}
 
         {/* Navigation Arrows */}
-        <button
-          onClick={prevSlide}
-          className="absolute left-4 sm:left-8 top-1/2 -translate-y-1/2 z-30 bg-background/30 backdrop-blur-md text-primary-foreground p-4 sm:p-5 rounded-full hover:bg-accent hover:scale-110 transition-all duration-300 group shadow-2xl border border-primary-foreground/20"
-          aria-label="Previous slide"
-        >
-          <ChevronLeft className="w-6 h-6 sm:w-8 sm:h-8 transition-transform group-hover:-translate-x-1" />
-        </button>
-        <button
-          onClick={nextSlide}
-          className="absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 z-30 bg-background/30 backdrop-blur-md text-primary-foreground p-4 sm:p-5 rounded-full hover:bg-accent hover:scale-110 transition-all duration-300 group shadow-2xl border border-primary-foreground/20"
-          aria-label="Next slide"
-        >
-          <ChevronRight className="w-6 h-6 sm:w-8 sm:h-8 transition-transform group-hover:translate-x-1" />
-        </button>
+       <button
+  onClick={prevSlide}
+  className="absolute left-4 sm:left-8 top-1/2 -translate-y-1/2 z-30 text-primary-foreground hover:text-accent transition-transform duration-300 group"
+  aria-label="Previous slide"
+>
+  <ChevronLeft className="w-8 h-8 sm:w-10 sm:h-10 transition-transform group-hover:-translate-x-1" />
+</button>
+
+<button
+  onClick={nextSlide}
+  className="absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 z-30 text-primary-foreground hover:text-accent transition-transform duration-300 group"
+  aria-label="Next slide"
+>
+  <ChevronRight className="w-8 h-8 sm:w-10 sm:h-10 transition-transform group-hover:translate-x-1" />
+</button>
+
 
         {/* Slide Indicators */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 flex gap-3 bg-background/20 backdrop-blur-md px-4 py-2.5 rounded-full border border-primary-foreground/20">
+        {/* <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 flex gap-3 bg-background/20 backdrop-blur-md px-4 py-2.5 rounded-full border border-primary-foreground/20">
           {slides.map((_, index) => (
             <button
               key={index}
@@ -167,46 +171,46 @@ const Hero = () => {
               aria-label={`Go to slide ${index + 1}`}
             ></button>
           ))}
-        </div>
+        </div> */}
       </div>
 
       {/* Services Section */}
-      <div className="relative -mt-32 z-30 pb-20">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-background/98 backdrop-blur-xl rounded-3xl shadow-2xl p-6 sm:p-8 md:p-10 border border-border/50">
-            <div className="text-center mb-8">
-              <span className="inline-block px-4 py-2 bg-accent/10 text-accent rounded-full text-sm font-bold uppercase tracking-wider mb-3">
-                What We Offer
-              </span>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
-                Comprehensive Security Solutions
-              </h2>
-            </div>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6">
-              {services.map((service, index) => {
-                const Icon = service.icon;
-                return (
-                  <div
-                    key={index}
-                    className="group relative overflow-hidden rounded-xl bg-gradient-to-br from-muted/50 to-muted/30 p-5 hover:shadow-xl hover:shadow-accent/10 transition-all duration-300 hover:-translate-y-2 border border-border/50 hover:border-accent/40 cursor-pointer"
-                  >
-                    <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-primary/5 opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
-                    <div className="flex flex-col items-center text-center gap-3">
-                      <div className={`relative w-14 h-14 rounded-lg bg-gradient-to-br ${service.color} flex items-center justify-center group-hover:scale-110 transition-all duration-300 shadow-lg`}>
-                        <Icon className="w-7 h-7 text-primary-foreground" />
-                      </div>
-                      <h3 className="relative text-sm font-bold text-foreground group-hover:text-accent transition-colors duration-300 leading-tight">
-                        {service.title}
-                      </h3>
-                    </div>
-                    <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-accent to-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left rounded-full"></div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </div>
+      <div className="relative -mt-32 z-30 pb-20 hidden sm:block">
+  <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="bg-background/98 backdrop-blur-xl rounded-3xl shadow-2xl p-6 sm:p-8 md:p-10 border border-border/50">
+      <div className="text-center mb-8">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">
+          Comprehensive Security Solutions
+        </h2>
       </div>
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6">
+        {services.map((service, index) => {
+          const Icon = service.icon;
+          return (
+            <div
+              key={index}
+              className="group relative overflow-hidden rounded-xl bg-gradient-to-br from-muted/50 to-muted/30 p-5 hover:shadow-xl hover:shadow-accent/10 transition-all duration-300 hover:-translate-y-2 border border-border/50 hover:border-accent/40 cursor-pointer"
+            >
+              <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-primary/5 opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
+              <div className="flex flex-col items-center text-center gap-3">
+                <div
+                  className={`relative w-14 h-14 rounded-lg bg-gradient-to-br ${service.color} flex items-center justify-center group-hover:scale-110 transition-all duration-300 shadow-lg`}
+                >
+                  <Icon className="w-7 h-7 text-primary-foreground" />
+                </div>
+                <h3 className="relative text-sm font-bold text-foreground group-hover:text-accent transition-colors duration-300 leading-tight">
+                  {service.title}
+                </h3>
+              </div>
+              <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-accent to-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left rounded-full"></div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  </div>
+</div>
+
     </section>
   );
 };

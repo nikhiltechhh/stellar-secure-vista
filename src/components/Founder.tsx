@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Award } from "lucide-react";
 import { Link } from "react-router-dom";
-import founder from "@/assets/Naveen.jpg";
+
 import Vamsi from "@/assets/Vamsi.jpeg";
 
 const Founder = () => {
@@ -34,7 +34,7 @@ const Founder = () => {
             <div className="relative mx-auto w-48 h-48 md:w-64 md:h-64 rounded-full bg-gradient-to-br from-primary/30 to-primary/10 border-4 border-primary/30 flex items-center justify-center overflow-hidden group">
               <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
               <img
-                src={founder}
+                src="https://i.ibb.co/TqWkQQwW/Naveen.jpg"
                 alt="Founder"
                 className="w-full h-full object-cover relative z-10"
               />

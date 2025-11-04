@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Award, ArrowLeft, CheckCircle, Target, Heart, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
-import founderImg from "@/assets/Naveen.jpg";
+
 
 const FounderDetail = () => {
   return (
@@ -25,7 +25,7 @@ const FounderDetail = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/10 via-transparent to-transparent"></div>
                   <div className="w-56 h-56 md:w-64 md:h-64 rounded-full overflow-hidden relative z-10 group-hover:scale-110 transition-transform duration-500">
                     <img
-                      src={founderImg}
+                      src="https://i.ibb.co/TqWkQQwW/Naveen.jpg"
                       alt="Founder"
                       className="w-full h-full object-cover"
                     />

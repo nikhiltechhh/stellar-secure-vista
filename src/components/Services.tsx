@@ -1,5 +1,6 @@
 import { Building2, Cctv, Wrench, Car, Flame, Users } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import { Link } from "react-router-dom"; // use Link from react-router-dom
 
 const services = [
   {
@@ -88,9 +89,9 @@ const Services = () => {
                   {service.description}
                 </p>
 
-                {/* Stylized Link Button */}
-                <a 
-                  href={service.link}
+                {/* React Router Link */}
+                <Link 
+                  to={service.link}
                   className="inline-flex items-center text-primary font-semibold group/link hover:gap-3 transition-all duration-300"
                 >
                   <span className="relative">
@@ -98,7 +99,7 @@ const Services = () => {
                     <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-secondary group-hover/link:w-full transition-all duration-300" />
                   </span>
                   <span className="text-xl group-hover/link:translate-x-2 transition-transform duration-300">→</span>
-                </a>
+                </Link>
               </div>
 
               {/* Corner Accent */}

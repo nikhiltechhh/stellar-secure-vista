@@ -32,12 +32,12 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<><Header /><About /><Footer /></>} />
           <Route path="/founderdetails" element={<><Header /><FounderDetails /><Footer /></>} />
-          <Route path="/service1" element={<><Header /><Service1 /><Footer /></>} />
-          <Route path="/service2" element={<><Header /><Service2 /><Footer /></>} />
-          <Route path="/service3" element={<><Header /><Service3 /><Footer /></>} />
-          <Route path="/service4" element={<><Header /><Service4 /><Footer /></>} />
-          <Route path="/service5" element={<><Header /><Service5 /><Footer /></>} />
-          <Route path="/service6" element={<><Header /><Service6 /><Footer /></>} />
+          <Route path="/Service1" element={<><Header /><Service1 /><Footer /></>} />
+          <Route path="/Service2" element={<><Header /><Service2 /><Footer /></>} />
+          <Route path="/Service3" element={<><Header /><Service3 /><Footer /></>} />
+          <Route path="/Service4" element={<><Header /><Service4 /><Footer /></>} />
+          <Route path="/Service5" element={<><Header /><Service5 /><Footer /></>} />
+          <Route path="/Service6" element={<><Header /><Service6 /><Footer /></>} />
           <Route path="*" element={<><Header /><NotFound /><Footer /></>} />
         </Routes>
       </BrowserRouter>

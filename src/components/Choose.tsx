@@ -1,6 +1,6 @@
 import React from 'react';
 import { Users, Award, BadgeCheck, Shield } from 'lucide-react';
-import security from '@/assets/security1.png';
+import security from '@/assets/Security1.png';
 
 const ChooseUs = () => {
   const features = [

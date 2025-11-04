@@ -7,7 +7,7 @@ const AboutUs = () => {
   const highlights = [
     { icon: Shield, text: "24/7 Professional Security" },
     { icon: Award, text: "Certified & Trained Personnel" },
-    { icon: Users, text: "Trusted by 500+ Clients" },
+    { icon: Users, text: "Trusted by 15+ Clients" },
   ];
 
   return (
@@ -106,7 +106,7 @@ const AboutUs = () => {
                   </div>
                   <div>
                     <p className="text-xs text-muted-foreground">Since</p>
-                    <p className="text-xl font-bold text-primary">2007</p>
+                    <p className="text-xl font-bold text-primary">2014</p>
                   </div>
                 </div>
               </div>

@@ -1,102 +1,85 @@
-import { Shield, Clock, Award, Users, Lock, HeadphonesIcon } from "lucide-react";
-import { Card } from "@/components/ui/card";
+import React from 'react';
+import { Users, Award, BadgeCheck, Shield } from 'lucide-react';
+import security from '@/assets/security1.png';
 
-const features = [
-  {
-    icon: Shield,
-    title: "Advanced Security Systems",
-    description: "State-of-the-art technology with AI-powered threat detection and 24/7 monitoring for complete peace of mind."
-  },
-  {
-    icon: Clock,
-    title: "24/7 Rapid Response",
-    description: "Our elite team responds within minutes. Round-the-clock protection ensuring your safety never sleeps."
-  },
-  {
-    icon: Award,
-    title: "Certified Professionals",
-    description: "Licensed, trained, and background-checked security experts with decades of combined experience."
-  },
-  {
-    icon: Users,
-    title: "Trusted by Thousands",
-    description: "Over 10,000 satisfied clients across residential, commercial, and industrial sectors nationwide."
-  },
-  {
-    icon: Lock,
-    title: "Comprehensive Coverage",
-    description: "From surveillance to access control, we provide end-to-end security solutions tailored to your needs."
-  },
-  {
-    icon: HeadphonesIcon,
-    title: "Dedicated Support",
-    description: "Personal account manager and 24/7 customer support team always ready to assist you."
-  }
-];
+const ChooseUs = () => {
+  const features = [
+    {
+      icon: Users,
+      title: '24/7 Support',
+      description: 'Round the clock assistance for all your security needs'
+    },
+    {
+      icon: Award,
+      title: 'Expert Employees',
+      description: 'Highly trained and experienced security professionals'
+    },
+    {
+      icon: BadgeCheck,
+      title: 'Verified Service',
+      description: 'Certified and background-checked security personnel'
+    },
+    {
+      icon: Shield,
+      title: 'Secured Service',
+      description: 'Comprehensive protection with advanced security measures'
+    }
+  ];
 
-const stats = [
-  { value: "11+", label: "Years Experience" },
-  { value: "100+", label: "Clients" },
-  { value: "99.9%", label: "Uptime Rate" },
-  { value: "24/7", label: "Monitoring" }
-];
-
-const Choose = () => {
   return (
-    <section id="choose" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background to-muted/30">
+    <div className="bg-gradient-to-br from-red-500 to-red-600 py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        {/* Header */}
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
-            Why Choose <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Us</span>
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Industry-leading protection backed by cutting-edge technology and unwavering commitment to your safety
-          </p>
-        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          
+          {/* Left Side - Image Placeholder */}
+          <div className="relative h-[400px] sm:h-[500px] lg:h-[600px] order-2 lg:order-1">
+            <img
+              src={security}
+              alt="Security Guard"
+              className="w-full h-full object-cover object-center rounded-lg "
+            />
+          </div>
 
-        {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16 animate-fade-in">
-          {stats.map((stat, index) => (
-            <div 
-              key={index}
-              className="text-center p-6 rounded-xl bg-card border border-border hover:shadow-[var(--shadow-card)] transition-all duration-300"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              <div className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-2">
-                {stat.value}
-              </div>
-              <div className="text-sm text-muted-foreground font-medium">
-                {stat.label}
-              </div>
+          {/* Right Side - Content */}
+          <div className="order-1 lg:order-2">
+            {/* Heading */}
+            <h2 className="text-4xl md:text-5xl font-bold text-center lg:text-left text-white mb-12">
+              Why Choose Us
+            </h2>
+
+            {/* Features Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-10">
+              {features.map((feature, index) => {
+                const Icon = feature.icon;
+                return (
+                  <div
+                    key={index}
+                    className="flex flex-col items-center sm:items-start text-center sm:text-left group hover:transform hover:scale-105 transition-transform duration-300"
+                  >
+                    {/* Icon Container */}
+                    <div className="mb-4 p-5 bg-white bg-opacity-10 rounded-full group-hover:bg-opacity-20 transition-all duration-300">
+                      <Icon className="w-10 h-10 md:w-12 md:h-12 text-white stroke-[1.5]" />
+                    </div>
+
+                    {/* Title */}
+                    <h3 className="text-xl md:text-2xl font-bold text-white mb-2">
+                      {feature.title}
+                    </h3>
+
+                    {/* Description */}
+                    <p className="text-white text-opacity-90 text-sm md:text-base">
+                      {feature.description}
+                    </p>
+                  </div>
+                );
+              })}
             </div>
-          ))}
-        </div>
+          </div>
 
-        {/* Features Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {features.map((feature, index) => (
-            <Card 
-              key={index}
-              className="group p-8 hover:shadow-[var(--shadow-hover)] transition-all duration-300 animate-fade-in border-border hover:border-primary/50 bg-card"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              <div className="mb-6 inline-flex p-4 rounded-xl bg-gradient-to-br from-primary/10 to-secondary/10 group-hover:from-primary/20 group-hover:to-secondary/20 transition-all duration-300">
-                <feature.icon className="w-8 h-8 text-primary group-hover:scale-110 transition-transform duration-300" />
-              </div>
-              <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors duration-300">
-                {feature.title}
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                {feature.description}
-              </p>
-            </Card>
-          ))}
         </div>
-
       </div>
-    </section>
+    </div>
   );
 };
 
-export default Choose;
+export default ChooseUs;

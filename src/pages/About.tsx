@@ -41,7 +41,7 @@ const About = () => {
         <div className="relative h-full flex items-center justify-center">
           <div className="text-center space-y-6 animate-fade-in px-4 max-w-4xl">
             <div className="inline-block px-6 py-2 bg-white/20 backdrop-blur-sm rounded-full border border-white/30 mb-4">
-              <span className="text-white font-semibold">Established 2007</span>
+              <span className="text-white font-semibold">Established 2014</span>
             </div>
             <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-white drop-shadow-2xl">
               About Us

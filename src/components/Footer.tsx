@@ -18,7 +18,7 @@ const Footer = () => {
   className="w-10 h-10 object-contain"
 />
 
-              <span className="text-xl font-bold text-[hsl(var(--footer-foreground))]">Srisamraksha</span>
+              <span className="text-xl font-bold text-[hsl(var(--footer-foreground))]">Sri Samraksha</span>
             </div>
             <p className="text-sm text-[hsl(var(--footer-muted))] leading-relaxed">
               Providing comprehensive security solutions to protect what matters most. Your safety is our priority.
@@ -136,12 +136,13 @@ const Footer = () => {
             
             {/* Emergency Contact */}
             <div className="mt-6 p-4 bg-[hsl(var(--footer-border))] rounded-lg border border-accent/20">
-              <p className="text-xs font-semibold text-[#cf150e] mb-1">24/7 Emergency</p>
+              <p className="text-xs font-semibold text-[#cf150e] mb-1">For Enquiries</p>
               <a 
-                href="tel:+1800911" 
+                href="tel:+918500199996" 
                 className="text-lg font-bold text-[hsl(var(--footer-foreground))] hover:text-[#cf150e] transition-colors duration-200"
               >
-                +91 8500199996
+                +91 8500199996 <br></br>
+                <span>+91 6281576979</span>
               </a>
             </div>
           </div>

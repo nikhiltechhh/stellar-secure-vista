@@ -58,7 +58,7 @@ const FounderDetail = () => {
               
               <div className="space-y-2">
                 <p className="text-2xl text-primary font-bold">
-                  Founder & Managing Director
+                  Founder
                 </p>
                 <p className="text-lg text-muted-foreground">
                   Sri Samraksha Security Services Private Limited

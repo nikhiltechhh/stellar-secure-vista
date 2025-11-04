@@ -50,29 +50,30 @@ const Header = () => {
           {/* Logo */}
           <div
             onClick={() => navigate('/')}
-            className="flex-shrink-0 group cursor-pointer flex items-center gap-3"
+            className="flex-shrink-0 group cursor-pointer flex items-center gap-0"
           >
             <img
               src={LOGO}
               alt="Srisamraksha Logo"
-              className="w-20 h-20 object-contain transition-transform duration-300 group-hover:scale-105"
+              className="w-24 h-24 object-contain transition-transform duration-300 group-hover:scale-105"
             />
             <div>
               <h1
-                className={`text-lg sm:text-xl font-bold tracking-tight transition-colors duration-300 ${
-                  isScrolled ? 'text-foreground' : 'text-primary-foreground'
-                }`}
-              >
-                Srisamraksha
-              </h1>
+  className={`text-xs sm:text-sm font-bold tracking-tight transition-colors duration-300 ${
+    isScrolled ? 'text-foreground' : 'text-primary-foreground'
+  }`}
+>
+  Sri Samraksha Security Services
+</h1>
+
               <p
-                className={`text-xs sm:text-sm font-medium transition-colors duration-300 ${
+                className={`text-xs sm:text-sm font-medium ml-4 transition-colors duration-300 ${
                   isScrolled
                     ? 'text-muted-foreground'
                     : 'text-primary-foreground/80'
                 }`}
               >
-                Security Services
+                "Your Safety is Our Priority"
               </p>
             </div>
           </div>

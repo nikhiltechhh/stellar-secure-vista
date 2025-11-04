@@ -1,5 +1,3 @@
-"use client";
-
 import { Building2, Cctv, Wrench, Car, Flame, Users } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
@@ -8,37 +6,37 @@ const services = [
     icon: Building2,
     title: "Corporate and Industrial Security",
     description: "Comprehensive security solutions for corporate offices, industrial facilities, and manufacturing units with trained personnel and advanced systems.",
-    link: "/service1"
-  },
-  {
-    icon: Cctv,
-    title: "Residential & Commercial Security",
-    description: "Round-the-clock protection for residential complexes, commercial buildings, and retail spaces ensuring safety and peace of mind.",
-    link: "/service3"
-  },
-  {
-    icon: Wrench,
-    title: "Facility & Housekeeping Management",
-    description: "Professional facility management and housekeeping services maintaining cleanliness, hygiene, and operational efficiency.",
-    link: "/service4"
-  },
-  {
-    icon: Car,
-    title: "Valet Parking",
-    description: "Premium valet parking services for hotels, restaurants, events, and commercial establishments with courteous and trained staff.",
-    link: "/service5"
-  },
-  {
-    icon: Flame,
-    title: "Fire Safety",
-    description: "Complete fire safety solutions including prevention systems, emergency response training, and compliance management.",
-    link: "/service6"
+    link: "/Service1"
   },
   {
     icon: Users,
     title: "Outsourcing Man Power",
     description: "Reliable manpower outsourcing services providing skilled and unskilled workforce tailored to your business requirements.",
-    link: "/service2"
+    link: "/Service2"
+  },
+  {
+    icon: Cctv,
+    title: "Residential & Commercial Security",
+    description: "Round-the-clock protection for residential complexes, commercial buildings, and retail spaces ensuring safety and peace of mind.",
+    link: "/Service3"
+  },
+  {
+    icon: Wrench,
+    title: "Facility & Housekeeping Management",
+    description: "Professional facility management and housekeeping services maintaining cleanliness, hygiene, and operational efficiency.",
+    link: "/Service4"
+  },
+  {
+    icon: Car,
+    title: "Valet Parking",
+    description: "Premium valet parking services for hotels, restaurants, events, and commercial establishments with courteous and trained staff.",
+    link: "/Service5"
+  },
+  {
+    icon: Flame,
+    title: "Fire Safety",
+    description: "Complete fire safety solutions including prevention systems, emergency response training, and compliance management.",
+    link: "/Service6"
   }
 ];
 
@@ -90,9 +88,9 @@ const Services = () => {
                   {service.description}
                 </p>
 
-                {/* Plain <a> Link */}
+                {/* Stylized Link Button */}
                 <a 
-                  href={service.link} // Must start with /
+                  href={service.link}
                   className="inline-flex items-center text-primary font-semibold group/link hover:gap-3 transition-all duration-300"
                 >
                   <span className="relative">

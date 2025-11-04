@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
-import WP from "@/assets/WP.JPG";
+
 import security1 from "@/assets/security-1.jpg";
 
 import security3 from "@/assets/security-3.jpg";
@@ -15,7 +15,7 @@ interface GalleryImage {
 
 const images: GalleryImage[] = [
     {
-    src: WP,
+    src: "https://i.ibb.co/tPq2WDP4/WP.jpg",
     alt: "Permissioned Access Control System",
     title: "Hyderabad Police",
   },

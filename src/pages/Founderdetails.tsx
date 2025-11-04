@@ -42,7 +42,7 @@ const FounderDetail = () => {
               </div>
             </div>
 
-            {/* Right: Title & Info */}
+            
             <div className="space-y-6 animate-fade-in" style={{ animationDelay: '0.2s' }}>
               <div className="inline-block bg-primary/10 text-primary px-5 py-2 rounded-full text-sm font-semibold border border-primary/20">
                 Leadership Profile

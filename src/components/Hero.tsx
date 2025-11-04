@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Shield, Cctv, Building2, Users, Car, Flame, UserPlus } from 'lucide-react';
-import hero1 from '@/assets/Security.jpg';
+
 import hero2 from '@/assets/cam.jpg';
 import hero3 from '@/assets/cam3.jpg';
-import CCTV from '@/assets/cctv.png';
+
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -11,7 +11,7 @@ const Hero = () => {
 
   const slides = [
     {
-      image: hero1,
+      image: "https://i.ibb.co/wZp3wVVJ/security.jpg",
       title: 'Professional Security Solutions',
       subtitle: 'Protecting What Matters Most',
     },

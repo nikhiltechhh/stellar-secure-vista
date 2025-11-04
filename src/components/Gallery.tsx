@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
-import WP from "@/assets/WP.jpg";
+import WP from "@/assets/WP.JPG";
 import security1 from "@/assets/security-1.jpg";
 
 import security3 from "@/assets/security-3.jpg";

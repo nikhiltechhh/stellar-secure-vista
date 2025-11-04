@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Award } from "lucide-react";
 import { Link } from "react-router-dom";
-import founder from "@/assets/founder.jpg";
+import founder from "@/assets/founder.JPG";
 import Vamsi from "@/assets/Vamsi.jpeg";
 
 const Founder = () => {

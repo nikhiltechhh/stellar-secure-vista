@@ -177,9 +177,17 @@ const Header = () => {
               </button>
             ))}
             <div className="px-4 pt-3">
-              <Button className="bg-gradient-to-r from-[#cf150e] to-[#e61710] hover:from-[#b5120b] hover:to-[#cf150e]">
-                Get Free Quote
-              </Button>
+              <Button
+  className="bg-gradient-to-r from-[#cf150e] to-[#e61710] hover:from-[#b5120b] hover:to-[#cf150e]"
+  onClick={() => {
+    const phoneNumber = '918500199996'; // WhatsApp format: no "+" or leading zeros
+    const message = encodeURIComponent('Hello! I would like to get a free quote.');
+    window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+  }}
+>
+  Get Free Quote
+</Button>
+
             </div>
           </div>
         </div>

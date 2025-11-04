@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Award } from "lucide-react";
 import { Link } from "react-router-dom";
 
-import Vamsi from "@/assets/Vamsi.jpeg";
+import Vamsi from "@/assets/vamsi.jpeg";
 
 const Founder = () => {
   return (

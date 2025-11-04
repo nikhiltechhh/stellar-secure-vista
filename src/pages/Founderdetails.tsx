@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Award, ArrowLeft, CheckCircle, Target, Heart, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
-import founderImg from "@/assets/founder.JPG";
+import founderImg from "@/assets/Naveen.jpg";
 
 const FounderDetail = () => {
   return (

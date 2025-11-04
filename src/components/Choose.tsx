@@ -1,6 +1,5 @@
 import React from 'react';
 import { Users, Award, BadgeCheck, Shield } from 'lucide-react';
-import security from '@/assets/Security1.png';
 
 const ChooseUs = () => {
   const features = [
@@ -34,7 +33,7 @@ const ChooseUs = () => {
           {/* Left Side - Image Placeholder */}
           <div className="relative h-[400px] sm:h-[500px] lg:h-[600px] order-2 lg:order-1">
             <img
-              src={security}
+              src="https://i.ibb.co/1Gxhw25y/Security1.png"
               alt="Security Guard"
               className="w-full h-full object-cover object-center rounded-lg "
             />
